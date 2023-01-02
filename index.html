@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game ScoreCard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>WHO WILL WIN?</h2>
+        <div class="cards">
+            
+            <div class="home_score">
+                <h3>HOME</h3>
+                <h1 id="result-el-home">0</h1>
+                <div class="btns">
+                    <button class="btn btn-1" onclick="home_one()">+1</button>
+                    <button class="btn btn-2" onclick="home_two()">+2</button>
+                    <button class="btn btn-3" onclick="home_three()">+3</button>
+                </div>
+                
+                <button class="reset-btn" onclick="home_reset()">RESET SCORE</button>
+            </div>
+            <div class="guest_score">
+                <h3 >GUEST</h3>
+                <h1 id="result-el-guest">0</h1>
+                <div class="btns">
+                    <button class="btn btn-1" onclick="guest_one()">+1</button>
+                    <button class="btn btn-2" onclick="guest_two()">+2</button>
+                    <button class="btn btn-3" onclick="guest_three()">+3</button>
+                </div>
+                <button class="reset-btn" onclick="guest_reset()">RESET SCORE</button>
+            </div>
+        </div>       
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
